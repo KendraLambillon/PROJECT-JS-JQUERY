@@ -68,3 +68,44 @@ body{
     padding-right: 30px;
 }
 
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify; /*Para justificar el parafo y que quede bien alineado*/
+}
+
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block; /*Para que actue como se fuera un bloque*/
+    padding: 15px;
+    background: #235E3D;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px; /*Tengo que poner un tamaño por culpa del displa:block*/
+    margin-bottom: 20px;
+}
+
