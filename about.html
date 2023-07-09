@@ -11,14 +11,13 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!--Slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <!--Moment JS CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+    <!-- Cargar los estilos CSS para el resizable -->
+    <link rel="stylesheet" href="js/jquery/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery/jquery-ui-1.13.2/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css" />
+    <!--Tener cuidado al poner en la buena carpeta de mi proyecto este fichero jquery ui sino no funcionara -->
+    <!-- Hacer ctrl+u para ver si lo carga bien en mi proyecto-->
+    <script type="text/javascript" src="js/jquery-ui-1.13.2/jquery-ui.min.js" ></script>
 
     <!--My scripts-->
     <script type="text/javascript" src="js/main.js"></script>
@@ -51,37 +50,25 @@
             </nav>
         </header>
 
-        <!--Slider-->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/butterfly.jpg" title="Butterfly" width="1250px" /></div>
-                <div><img src="img/lion.jpg" title="Lion" width="1250px" /></div>
-                <div><img src="img/colibri.jpg" title="Colibri" width="1250px" /></div>
-            </div>
-        </div>
-
         <!--Content-->
         <section id="content">
-            <div id="posts">
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>
-                        Lorem ipsum dolor sit amet. Hic corrupti eius aut odit porro ut dignissimos optio cum nihil dolorum non vitae alias. Cum rerum fugiat nam voluptatem quis ut dolorem ipsa aut veniam consequatur ea ipsa corrupti. Et itaque fugit et beatae animi cum nulla facilis et recusandae tempora et similique laborum sed itaque tempora ab deserunt pariatur! Sed asperiores perspiciatis et aliquam officiis sed numquam quod ad minima error et repellendus impedit.
-                    </p>
-                    <a href="#" class="button-more">Read more</a>
-                </article>
-
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>
-                        Lorem ipsum dolor sit amet. Hic corrupti eius aut odit porro ut dignissimos optio cum nihil dolorum non vitae alias. Cum rerum fugiat nam voluptatem quis ut dolorem ipsa aut veniam consequatur ea ipsa corrupti. Et itaque fugit et beatae animi cum nulla facilis et recusandae tempora et similique laborum sed itaque tempora ab deserunt pariatur! Sed asperiores perspiciatis et aliquam officiis sed numquam quod ad minima error et repellendus impedit.
-                    </p>
-                    <a href="#" class="button-more">Read more</a>
-                </article>
-
-                <!--El resto de articulos estan cargados desde json en mi fichero main.js-->
+            <div id="box">
+                <!--Cargar acordeon-->
+                <h2>Sobre mi</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet. Hic corrupti eius aut odit porro ut dignissimos optio cum nihil dolorum non vitae alias.</p>
+                    </div>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet. Hic corrupti eius aut odit porro ut dignissimos optio cum nihil dolorum non vitae alias.</p>
+                    </div>
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet. Hic corrupti eius aut odit porro ut dignissimos optio cum nihil dolorum non vitae alias.</p>
+                    </div>
+                </div>
             </div>
 
             <aside id="sidebar">
