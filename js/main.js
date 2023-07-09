@@ -62,6 +62,18 @@ $(document).ready(function(){
         theme.attr("href", "css/blue.css");
     });
 
+    //Scroll up
+    $(".up").click(function(e){
+        e.preventDefault();
+
+        $("html , body").animate({
+            scrollTop: 0
+        }, 500);
+
+        return false;
+
+    });
+
 });
 
 

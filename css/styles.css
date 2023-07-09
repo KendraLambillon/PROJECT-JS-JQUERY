@@ -191,3 +191,10 @@ footer{
     background: #1f87c4;
 }
 
+.up{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
