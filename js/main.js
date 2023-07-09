@@ -71,8 +71,32 @@ $(document).ready(function(){
         }, 500);
 
         return false;
-
     });
+
+    //Fake login
+    $("#login form").submit(function(){
+        var form_name = $("#form_name").val();
+
+        localStorage.setItem("form_name", form_name);
+    });
+
+    var form_name = localStorage.getItem("form_name");
+
+    //Comprobar si form_name esta null
+    if(form_name != null && form_name != "undefined"){
+        var about_parrafo = $("#about p");
+
+        about_parrafo.html("<strong>Bienvenido/a, " + form_name +" </strong> ");
+        about_parrafo.append("<a href='#' id='logout'>Cerrar sesion</a>"); //Ponemos un logout para volver a ver el formulario
+
+        $("#login").hide();
+
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload(); //Se me actualiza la pagina. location --> me redirige al form de login
+        });
+    }
+
 
 });
 
