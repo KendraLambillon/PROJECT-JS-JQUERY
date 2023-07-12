@@ -111,6 +111,16 @@ $(document).ready(function(){
 		$("#acordeon").accordion();
 	}
 
+    //Reloj
+    if(window.location.href.indexOf('reloj') > -1){
+        //Funccion que nos permite ejecutar en bucle un trozo de instruccion
+        //Para nuestro reloj sea dinamico
+        setInterval(function(){
+            var reloj = moment().format("hh:mm:ss");
+            $('#reloj').html(reloj);
+        }, 1000);
+	}
+
 
 });
 
